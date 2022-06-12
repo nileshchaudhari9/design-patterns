@@ -1,0 +1,13 @@
+{
+  "Order": {
+    "CustomerId": { "int": {} },
+    "Date": { "dateTime": {} },
+    "TotalAmount": { "int": {} },
+    "Items": { "hasMany": "OrderItems" }
+  },
+  "OrderItems": {
+    "ItemId": { "int": {} },
+    "Quantity": { "int": {} },
+    "Price": { "int": {} }
+  }
+}

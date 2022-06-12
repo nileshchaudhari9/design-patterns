@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractFactoryDemo\AbstractFactoryDemo.csproj" />
+    <ProjectReference Include="..\PlainFactory\PlainFactory.csproj" />
+    <ProjectReference Include="..\Singleton\Singleton.csproj" />
+    <ProjectReference Include="..\CommandDemo\CommandDemo.csproj" />
+    <ProjectReference Include="..\FacadeDemo\FacadeDemo.csproj" />
+    <ProjectReference Include="..\GenericFactory\GenericFactory.csproj" />
+    <ProjectReference Include="..\DependencyInjectionDemo\DependencyInjectionDemo.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
