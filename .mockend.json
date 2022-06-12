@@ -7,11 +7,6 @@
         "max": "2023-12-31T23:59:59Z"
       }
     },
-    "TotalAmount": { "int": { "min": 0, "max": 1000000 } },
-    "Items": {  
-          "ItemId": { "int": { "min": 0, "max": 1000000 } },
-          "Quantity": { "int": { "min": 0, "max": 1000000 } },
-          "Price": { "int": { "min": 0, "max": 1000000 } }
-    }
+    "TotalAmount": { "int": { "min": 0, "max": 1000000 } }
   }
 }
