@@ -8,11 +8,10 @@
       }
     },
     "TotalAmount": { "int": { "min": 0, "max": 1000000 } },
-    "Items": { "object[]": {
+    "Items": {  
           "ItemId": { "int": { "min": 0, "max": 1000000 } },
           "Quantity": { "int": { "min": 0, "max": 1000000 } },
           "Price": { "int": { "min": 0, "max": 1000000 } }
-    } 
-  }
+    }
   }
 }
