@@ -1,15 +1,20 @@
 {
   "Order": {
-    "CustomerId": { "int": { "min": 0, "max": 1000000 } } ,
-    "Date": { "dateTime": {  "min": "2010-01-01T00:00:00Z",
-      "max": "2023-12-31T23:59:59Z"} },
-    "TotalAmount": { "int": { "min": 0, "max": 1000000 } } ,
-    "Items": { "hasMany": "OrderItems" }
-  },
-  "OrderItems": {
-    "ItemId": { "int": { "min": 0, "max": 1000000 } } ,
-    "Quantity": { "int": { "min": 0, "max": 1000000 } } ,
-    "Price": { "int": { "min": 0, "max": 1000000 } } ,
-    "Order": { "belongsTo": "Order" }
+    "CustomerId": { "int": { "min": 0, "max": 1000000 } },
+    "Date": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2023-12-31T23:59:59Z"
+      }
+    },
+    "TotalAmount": { "int": { "min": 0, "max": 1000000 } },
+    "Items": [
+      {
+        "ItemId": { "int": { "min": 0, "max": 1000000 } },
+        "Quantity": { "int": { "min": 0, "max": 1000000 } },
+        "Price": { "int": { "min": 0, "max": 1000000 } },
+        "Order": { "belongsTo": "Order" }
+      }
+    ]
   }
 }
