@@ -13,7 +13,7 @@ public class HttpOrderSender : IOrderSender
         var stringContent = new StringContent(jsonOrder, UnicodeEncoding.UTF8, "application/json");
 
         //This statement calls a not existing URL. This is just an example...
-        var response = await httpClient.PostAsync("https://mockend.com/nileshchaudhari9/design-patterns/users", stringContent);
+        var response = await httpClient.PostAsync("https://mockend.com/nileshchaudhari9/design-patterns/posts", stringContent);
 
         return response.Content.ReadAsStringAsync().Result;
 

@@ -1,14 +1,20 @@
 {
   "Order": {
-    "CustomerId": { "int": {} },
-    "Date": { "dateTime": {} },
-    "TotalAmount": { "int": {} },
+    "CustomerId": { "int": { "minLength": 5,
+      "maxLength": 20} },
+    "Date": { "dateTime": {  "min": "2010-01-01T00:00:00Z",
+      "max": "2023-12-31T23:59:59Z"} },
+    "TotalAmount": { "int": { "minLength": 5,
+      "maxLength": 20} },
     "Items": { "hasMany": "OrderItems" }
   },
   "OrderItems": {
-    "ItemId": { "int": {} },
-    "Quantity": { "int": {} },
-    "Price": { "int": {} },
+    "ItemId": { "int": { "minLength": 5,
+      "maxLength": 20} },
+    "Quantity": { "int": { "minLength": 5,
+      "maxLength": 20} },
+    "Price": { "int": { "minLength": 5,
+      "maxLength": 20} },
     "Order": { "belongsTo": "Order" }
   }
 }
